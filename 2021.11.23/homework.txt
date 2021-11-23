@@ -1,0 +1,15 @@
+#1 check if a number is primary.
+A number is primary if he divides only by 1 and by itself
+
+1 - primary
+2 - primary
+3 - primary
+4 - not primary, all even are not primary
+5, 7, 11, 13, 19 - primaries
+
+#2 sum digits of a number
+the sum of 1,512 is 9
+
+#3 count vowels in String
+in the word "HEllo XYZ" you can find 2 vowels
+vowel - A E I O U / a e i o u
