@@ -1,0 +1,9 @@
+1) create a function to find maximum value in array
+
+func findMaxVal(in arr: [Int]) -> Int {
+
+}
+
+2) create a function to check is a String is Palindrome
+Palindrome can be read same from right or left
+for example: civic, radar, level, rotor, kayak, reviver, racecar, madam
