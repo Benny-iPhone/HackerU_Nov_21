@@ -1,0 +1,24 @@
+Vending Machine
+
+cost: 99 cent
+input: 5$
+change: 4.01
+
+possible coins:
+1$
+50 cent
+25 cent
+10 cent
+5 cent
+1 cent
+
+4.01
+//
+[1$, 0.5, 0.25, .10, .05, .01]
+[4,   0,    0,    0,  0,  1]
+
+func solution(input: Int, cost: Int) -> [Int] {
+
+}
+
+solution(input: 500, cost: 99)
