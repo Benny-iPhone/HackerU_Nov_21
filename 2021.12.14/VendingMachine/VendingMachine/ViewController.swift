@@ -40,11 +40,24 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: Any) {
-        
-        let price = priceTextField.text
-        
         print("button pressed")
-        resultLabel.text = "hi 👋"
+        
+        //we can not create Int from String?, therefor using '?? ""' we have String (non optional)
+        //using guard, we un-wrap to Optional Int to Int, and we also check that price is positive value
+        // ',' in guard statement is just like && in if statement
+        guard let price = Int(priceTextField.text ?? ""), price > 0 else {
+            print("invalid price")
+            return
+        }
+        guard let input = Int(inputTextField.text ?? ""), input > 0 else {
+            print("invalid input")
+            return
+        }
+        
+        //invoke the solution func, result is Int array
+        let result = solution(input: input, cost: price)
+        //display the result in the label
+        resultLabel.text = "\(result)"
     }
     
     

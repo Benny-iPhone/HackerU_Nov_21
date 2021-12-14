@@ -1,0 +1,13 @@
+Calculator App
+
+Crate an app with
+2 UITextField
+4 UIButton
+1 UILabel
+
+first text field is the first number
+second text field is the second number
+
+each button represent an operation (plus, minus, multi, div)
+
+the label display the result
