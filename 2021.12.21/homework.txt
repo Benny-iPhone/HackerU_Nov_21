@@ -1,0 +1,2 @@
+1. finish date converter app
+2. finish Point's distance(from p: Point) function implementation
