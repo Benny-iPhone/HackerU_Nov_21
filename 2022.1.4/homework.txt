@@ -1,0 +1,7 @@
+1. Enrich your own project (repeat what we did in class in your own code)
+2. Format price => display the price using NumberFormatter api
+https://developer.apple.com/documentation/foundation/numberformatter
+https://stackoverflow.com/questions/24960621/formatting-input-for-currency-with-nsnumberformatter-in-swift
+
+3. Add a view controller to display total amount
+4. Add a label to the cell with total price for item (price * qunatity)
