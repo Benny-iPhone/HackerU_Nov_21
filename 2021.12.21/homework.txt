@@ -1,2 +1,41 @@
 1. finish date converter app
 2. finish Point's distance(from p: Point) function implementation
+
+homework solution ✅
+review IBOutlet and IBAction bug fixes ✅
+classes ✅
+- properties ✅
+- init ✅
+- functions ✅
+- ref vs val
+singleton ✅
+
+table view
+
+Shopping List App
+
+Item ✅
+- id
+- name
+- price (?)
+- quantity
+- createdDate
+
+ListManager
+- addItem(item) ✅
+- deleteItem(item) ✅
+- updateItem(item) ✅
+- saveToDisk() ✅
+- readFromDisk() ✅
+- getTotalPrice() ✅
+
+ListViewController
+- tableView (display all items) ✅
+- - ItemCell - tableViewCell  ✅
+
+AddItemViewController ✅
+- name textfield
+- price textfield (?)
+- quantity stepper (+-)
+- quantity label
+

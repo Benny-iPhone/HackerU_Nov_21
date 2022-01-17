@@ -1,0 +1,184 @@
+Layout
+
+=====================
+Agenda
+=====================
+
+
+Basic Constraints
+- leading
+- trailing
+- top
+- bottom
+- height 
+- width
+
+Relative 
+- center x
+- center y
+- relative width
+- relative height
+
+Align Items to each other
+Complex Element
+(icon - text)
+
+Priority and animation
+Layout per device size
+
+=====================
+Intro
+=====================
+
+
+
+
+Every element neends to know its x, y, width , height (frame)
+some elements define their own width and height
+- label, button, imageview, switch (by content)
+for example,in label.
+we can set custom width for line breaking
+some does not know
+- view, scrollview, tableview
+some knows by thier children
+- stackview, custom views
+
+if we failed to fulfill x,y,width,height -> we get red error in storyboard
+- some might be missing
+- some might conflict
+
+=====================
+Use cases
+=====================
+
+
+1) Yellow Rectangle in left top corner
+using UIView
+- x: distance from left side (leading) - 16
+- y: distance from safe area top (top) - 12
+- w: constact width (100)
+- h: constact height (100)
+
+2) Green Rectangle in right bottom corner
+using UIView
+- x: distance from right side (trailing) - 16
+- y: distance from safe area bottom (bottom) - 12
+- w: constact width (100)
+- h: constact height (100)
+
+more about leading trailing vs right/left
+in RTL locale (for example english):
+leading == left
+trailing == right
+in LTR locale (for example hebrew, arabic):
+leading == right
+trailing == left
+
+Add support to hebrew:
+Project -> project -> Localization -> + -> select locale
+
+In order to ignore language direction:
+Click on element -> size inspector -> double click on layout constraint -> First Item -> Uncheck "Respect Language Direction"
+
+more about safe area
+
+3) add blue rectangle to the device top
+- x: distance from right side (trailing) - 0
+- y: distance from screen top (bottom) - 0 (not safe area)
+- w: constact width (200)
+- h: constact height (200)
+
+4) add label to yellow view
+- x: leading 8
+- y: top (to yellow view) 8
+- w: auto
+- h: auto
+
+when label text is too long, the label is exceeding the parent view
+we can check "clip to bounds" to limit the label overflow
+
+4.1) label from left to right, with background color, 2 lines
+- x,w: trailing - 8
+=> label know where to start, where to end -> x, width
+
+5) Teal reactangle
+x: leading 20
+y: top 8 to yellow view
+w: trailing 20
+h: constant 128
+
+Advanced constant
+
+6) label
+x: leading 8
+y: top 8 to teal
+w: according to text, limit to safe area trailing by 8
+h: auto (single line)
+
+edit trailing:
+Click on label -> size inspector -> select trailing constraint -> double click -> change equal to "equal or greater than"
+
+=====================
+Use cases - relative layout
+=====================
+
+1) Yellow view (UIView)
+a rectable in the middle of the view, 20% width , 20% height
+x: center
+y: center
+w: 20% to safe area
+h: 20% to safe area
+Drag from element to its parent and select the proper option (center hotizonaly/verticaly, equal width/height)
+Edit constaint: change multiplier to 0.2 or 1/5
+
+2) Background image using relative layout
+- add an image (jpeg/png/svg) to assets
+x: center (view)
+y: center (view)
+w: 100%
+h: 100%
+you might need to change reference from safe area to superview, you can do so by editing the constraint's second item
+
+3) add view in relative dimenssions
+start from 0.25 screen width
+white UIView
+width double than yellow view
+leading x: 1/4 superview width
+width: 2 * yellowView.width
+height: 1 * yellowView.width
+y: something
+
+aspect ratio (3:4)
+4) A view of ratio 3:4
+height is 4/3 of width of screen
+x: some
+y: some
+w: screen width
+h: 4/3 * screen width (edit constraint value)
+
+=====================
+Complex
+=====================
+
+Elemet contains
+image, text
+
+A view with some dimenssions
+inside imageview and label
+label: x: 8, y: center to imageview, trailing to image: 8
+imageView: leading to label: 8, top: 8, bottom: 8 trailing: 8
+
+=====================
+Peek Card
+=====================
+
+a View is in to bottom of the main view with constant height
+x: 8
+width: full - 16 (trailing 8)
+bottom: 0
+
+collapsed: height 80
+expanded: top 120
+toggle priority
+
+
