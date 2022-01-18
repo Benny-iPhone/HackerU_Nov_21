@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MockPangoUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="v0E-41-xam">
+                                <rect key="frame" x="16" y="164" width="382" height="90"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZo-JE-MSJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="90"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-L5-cZg" customClass="BorderedView" customModule="MockPangoUI" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="90"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="iWr-ng-8MT">
+                                                <rect key="frame" x="41" y="-16" width="101" height="63.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-london_cab" translatesAutoresizingMaskIntoConstraints="NO" id="h32-hV-2El">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="mcS-Qn-YaW"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="המכונית של בני" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-dM-Hpx">
+                                                        <rect key="frame" x="0.0" y="26" width="101" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="78-759-13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsf-ol-A5F">
+                                                        <rect key="frame" x="0.0" y="46.5" width="101" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="iWr-ng-8MT" firstAttribute="top" secondItem="yZo-JE-MSJ" secondAttribute="top" constant="-16" id="0lD-D9-PDw"/>
+                                            <constraint firstItem="vY2-L5-cZg" firstAttribute="leading" secondItem="yZo-JE-MSJ" secondAttribute="leading" id="9Jw-vK-FLD"/>
+                                            <constraint firstItem="vY2-L5-cZg" firstAttribute="top" secondItem="yZo-JE-MSJ" secondAttribute="top" id="AU8-R7-bgP"/>
+                                            <constraint firstAttribute="height" constant="90" id="VeC-iq-fAW"/>
+                                            <constraint firstItem="iWr-ng-8MT" firstAttribute="centerX" secondItem="yZo-JE-MSJ" secondAttribute="centerX" id="Z71-9d-BAk"/>
+                                            <constraint firstAttribute="trailing" secondItem="vY2-L5-cZg" secondAttribute="trailing" id="j57-KL-Hqx"/>
+                                            <constraint firstAttribute="bottom" secondItem="vY2-L5-cZg" secondAttribute="bottom" id="o9C-D8-r97"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGF-gO-cyJ" customClass="BorderedView" customModule="MockPangoUI" customModuleProvider="target">
+                                        <rect key="frame" x="199" y="0.0" width="183" height="90"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="CgF-js-vhQ">
+                                                <rect key="frame" x="59" y="-16" width="65.5" height="63.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-region" translatesAutoresizingMaskIntoConstraints="NO" id="Gkx-df-1gd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="65.5" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="ml5-dT-AeI"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הוד השרון" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VJ-So-v6H">
+                                                        <rect key="frame" x="0.0" y="26" width="65.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="רחבי העיר" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxd-Fu-Zk8">
+                                                        <rect key="frame" x="0.0" y="46.5" width="65.5" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="Bhz-OP-yC1"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="1QG-i2-fQ2"/>
+                                            <constraint firstItem="CgF-js-vhQ" firstAttribute="top" secondItem="qGF-gO-cyJ" secondAttribute="top" constant="-16" id="H0d-FY-oGe"/>
+                                            <constraint firstItem="CgF-js-vhQ" firstAttribute="centerX" secondItem="qGF-gO-cyJ" secondAttribute="centerX" id="cnw-0F-FmN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v0E-41-xam" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="COC-EK-1M9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v0E-41-xam" secondAttribute="trailing" constant="16" id="lyb-xz-U0p"/>
+                            <constraint firstItem="v0E-41-xam" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tXD-LL-ADI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-london_cab" width="50" height="50"/>
+        <image name="icons8-region" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

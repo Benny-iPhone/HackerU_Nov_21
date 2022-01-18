@@ -1,0 +1,40 @@
+UIView props
+
+bgColor
+hidden
+alpha
+tint
+clipToBounds
+layer - gradient background
+interaction
+
+addSubview
+insertSubview
+subviews
+superview
+sendSubviewToBack
+bringSubviewToFront
+
+addConstraint
+constrains
+removeConstraint
+anchors
+
+subview
+
+draw
+gestures
+addMotionEffect
+
+tag
+
+chessview + layout
+
+animation
+
+frame
+bounds
+center
+transform
+alpha
+backgroundColor

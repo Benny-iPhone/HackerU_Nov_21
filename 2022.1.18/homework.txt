@@ -1,0 +1,10 @@
+1. Create an app with UISwitch that changes the isHidden of other view
+2. Create an app with 3 UISlider (red, green, blue) and update the background color of someview according to theirs value
+note: slider default is 0...1
+UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>) gets value of 0...1
+Bonus: display the selected color in hex value
+
+0 - 0
+1 - 255
+
+0.5 - 128
