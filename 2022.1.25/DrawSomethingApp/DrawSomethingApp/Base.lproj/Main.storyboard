@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BTg-kf-kI8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Draw Something-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrawSomethingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kE-zA-gaT">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="ZIW-II-SDH"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yK1-GN-60o"/>
+                                    <barButtonItem systemItem="trash" id="lDh-t4-pwi">
+                                        <connections>
+                                            <action selector="trashAction:" destination="BYZ-38-t0r" id="lKj-07-dEX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCI-Vs-FZv" customClass="DrawView" customModule="DrawSomethingApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qCI-Vs-FZv" secondAttribute="trailing" id="2pz-Ji-V1g"/>
+                            <constraint firstItem="0kE-zA-gaT" firstAttribute="top" secondItem="qCI-Vs-FZv" secondAttribute="bottom" id="CIi-d7-0oP"/>
+                            <constraint firstItem="qCI-Vs-FZv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RE8-EI-XEp"/>
+                            <constraint firstItem="0kE-zA-gaT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VJq-EM-ePz"/>
+                            <constraint firstItem="qCI-Vs-FZv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gQZ-xj-d4n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0kE-zA-gaT" secondAttribute="trailing" id="kZM-Jc-eIF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0kE-zA-gaT" secondAttribute="bottom" id="yaK-zk-tmc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Draw Something" id="9UP-wl-McW"/>
+                    <connections>
+                        <outlet property="drawView" destination="qCI-Vs-FZv" id="hDC-LK-1AU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="124.55357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CQ7-GV-Bj5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BTg-kf-kI8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ryf-2A-M6b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vxb-tn-k1J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4sM-8C-Cmq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

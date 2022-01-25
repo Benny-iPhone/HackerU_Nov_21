@@ -1,0 +1,11 @@
+25.1.2022 homework:
+
+1) create an app with a view that roatets forever
+(modify the view transfom by a small rotation every small interval using timer)
+
+2) Encrich DrawSomethingApp project with
+a. save the draw as an image to library (UIView to UIImage, save UIImage to library)
+b. select pencil size
+c. select color
+d. undo (array of bezierPath instead of 1)
+e. redo

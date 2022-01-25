@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8TV-y6-yHg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M4R-cT-ukn" customClass="TriangleView" customModule="Drawing" customModuleProvider="target">
+                                <rect key="frame" x="42" y="125" width="339" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFL-sw-otm" customClass="TriangleView" customModule="Drawing" customModuleProvider="target">
+                                <rect key="frame" x="20" y="483" width="165" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcC-bQ-Pgf" customClass="TriangleView" customModule="Drawing" customModuleProvider="target">
+                                <rect key="frame" x="262" y="483" width="62" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="e0P-Rk-xH9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="-226"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="y0W-dS-QG6">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8TV-y6-yHg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dYV-OR-Xq3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="dTN-9a-Ozd"/>
+                        <segue destination="7Dp-XL-sbL" kind="relationship" relationship="viewControllers" id="cI6-eT-IT3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60A-mK-Dpg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="mDi-Wt-Nm6">
+            <objects>
+                <viewController id="7Dp-XL-sbL" customClass="SecondViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbg-JL-xT3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUZ-tW-I6K" customClass="CircleView" customModule="Drawing" customModuleProvider="target">
+                                <rect key="frame" x="87" y="308.5" width="240" height="240"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="XJp-gv-yhl"/>
+                                    <constraint firstAttribute="height" constant="240" id="ie0-dv-t3f"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-qH-AY7">
+                                <rect key="frame" x="85" y="572.5" width="244" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="7Dp-XL-sbL" eventType="valueChanged" id="qoJ-14-emB"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vke-3L-uaJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ffY-qH-AY7" firstAttribute="trailing" secondItem="aUZ-tW-I6K" secondAttribute="trailing" id="GuQ-OT-SoD"/>
+                            <constraint firstItem="ffY-qH-AY7" firstAttribute="top" secondItem="aUZ-tW-I6K" secondAttribute="bottom" constant="24" id="kc5-xi-dlN"/>
+                            <constraint firstItem="aUZ-tW-I6K" firstAttribute="centerY" secondItem="Vke-3L-uaJ" secondAttribute="centerY" id="mzL-sp-Tqp"/>
+                            <constraint firstItem="ffY-qH-AY7" firstAttribute="leading" secondItem="aUZ-tW-I6K" secondAttribute="leading" id="r6I-9Z-JGh"/>
+                            <constraint firstItem="aUZ-tW-I6K" firstAttribute="centerX" secondItem="Vke-3L-uaJ" secondAttribute="centerX" id="xoJ-uf-vuN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ufY-2U-aVo"/>
+                    <connections>
+                        <outlet property="circleView" destination="aUZ-tW-I6K" id="xaX-Za-aQB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEc-d2-7nA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="462"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

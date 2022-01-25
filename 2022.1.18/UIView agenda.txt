@@ -1,5 +1,13 @@
 UIView props
 
+addSubview ✅
+insertSubview
+subviews
+superview
+sendSubviewToBack
+bringSubviewToFront
+
+
 bgColor
 hidden
 alpha
@@ -8,12 +16,7 @@ clipToBounds
 layer - gradient background
 interaction
 
-addSubview
-insertSubview
-subviews
-superview
-sendSubviewToBack
-bringSubviewToFront
+
 
 addConstraint
 constrains
