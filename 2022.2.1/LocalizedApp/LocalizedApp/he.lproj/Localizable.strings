@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  LocalizedApp
+
+  Created by Benny Davidovitz on 01/02/2022.
+  
+*/
+
+"key" = "ערך";
+/*
+"WelcomeVC.Title" = "Welcome";
+"WelcomeVCTitle" = "";
+"Welcome" = "Welcome";
+*/
+
+"label" = "תווית";
+"show_alert" = "הצג התראה";
+"play_audio" = "נגן אודיו";
+
+"alert.title" = "הי גבר";
+"alert.message" = "משהו משהו";
+"alert.ok" = "סבבה";
+

@@ -1,0 +1,13 @@
+
+Create an app that plays radio station(s)
+
+1. Button for play/pause
+2. Slider for volume
+3. Segmented control for selecting stations
+
+4. here you can find streaming urls for radio stations:
+http://www.radiosure.com/stations/
+
+5. you will need to enable http networking in your info.plist file (google it) 
+6. AVPlayer is the class for playing audio from streaming url
+7. Bonus: run on a real device, and make it playable when the app in background
