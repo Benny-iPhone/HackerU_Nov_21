@@ -1,0 +1,5 @@
+8.2.2022 homework:
+
+1. use picker view for radio station
+
+2. limit input of first name and last name to not include emoji (UITextFieldDelegate)
