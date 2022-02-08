@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var stackviewTop: NSLayoutConstraint!
+    @IBOutlet weak var scrollViewBottom: NSLayoutConstraint!
     
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -38,13 +38,12 @@ class ViewController: UIViewController {
     @objc func handleKeyboardShow(_ note: Notification) {
         //https://stackoverflow.com/questions/31774006/how-to-get-height-of-keyboard
         let keyboardHeight = (note.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.height ?? 0
-        
-        //Benny TODO: take care of scroll view
-        
+        let diff = max(keyboardHeight - self.view.safeAreaInsets.bottom,0)
+        scrollViewBottom.constant = diff
     }
     
     @objc func handleKeyboardHide(_ note: Notification) {
-        //Benny TODO: take care of scroll view
+        scrollViewBottom.constant = 0
     }
     
     private func updateSubmitButton() {
