@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RlW-hK-eKy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up Form-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCc-c1-XNW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="tRJ-n7-NWM">
+                                        <rect key="frame" x="20" y="8" width="374" height="451"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Y0v-3A-60B">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="given-name"/>
+                                                <connections>
+                                                    <action selector="nextPressedAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="7al-5y-FT6"/>
+                                                    <action selector="textFieldChangedAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="ZBH-bn-7jl"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SUs-UP-p0A">
+                                                <rect key="frame" x="0.0" y="59" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="family-name"/>
+                                                <connections>
+                                                    <action selector="nextPressedAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Elh-JD-KIO"/>
+                                                    <action selector="textFieldChangedAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="NQy-Tx-AHr"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mE3-UK-g9o">
+                                                <rect key="frame" x="0.0" y="118" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                                <connections>
+                                                    <action selector="nextPressedAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="vhl-Jt-3So"/>
+                                                    <action selector="textFieldChangedAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="dhS-iE-dLu"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="to9-Xo-WiJ" customClass="ToolbarTextField" customModule="TextFieldProject" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="177" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="next" textContentType="tel"/>
+                                                <connections>
+                                                    <action selector="nextPressedAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="dta-uX-8Wq"/>
+                                                    <action selector="textFieldChangedAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="pSB-hC-dyY"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kf2-pe-E6W">
+                                                <rect key="frame" x="0.0" y="236" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="nextPressedAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="kpo-K0-LqD"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthdate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XSM-wB-JNZ" customClass="DateTextField" customModule="TextFieldProject" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="295" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                <connections>
+                                                    <action selector="nextPressedAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="AsW-Ft-Q3q"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FGD-Eu-J2h" customClass="GenderTextField" customModule="TextFieldProject" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="354" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="nextPressedAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="npG-t2-FXi"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA7-j7-vRh">
+                                                <rect key="frame" x="0.0" y="413" width="374" height="38"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Submit"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tRJ-n7-NWM" secondAttribute="trailing" constant="20" id="1QZ-h8-8OF"/>
+                                    <constraint firstItem="tRJ-n7-NWM" firstAttribute="top" secondItem="wCc-c1-XNW" secondAttribute="top" constant="8" id="CJk-oP-wgp"/>
+                                    <constraint firstItem="tRJ-n7-NWM" firstAttribute="leading" secondItem="wCc-c1-XNW" secondAttribute="leading" constant="20" id="YBr-hX-IHT"/>
+                                    <constraint firstItem="tRJ-n7-NWM" firstAttribute="width" secondItem="wCc-c1-XNW" secondAttribute="width" constant="-40" id="pSh-w9-8LF"/>
+                                    <constraint firstAttribute="bottom" secondItem="tRJ-n7-NWM" secondAttribute="bottom" id="zLa-0U-QhN"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="74Q-IO-5wt"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ezI-uI-J9P"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wCc-c1-XNW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fp3-V7-U7Y"/>
+                            <constraint firstItem="wCc-c1-XNW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hBz-Sk-5bC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wCc-c1-XNW" secondAttribute="trailing" id="iJT-jr-dVA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wCc-c1-XNW" secondAttribute="bottom" id="qhz-1J-EXT"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="oo8-NU-BHg" appends="YES" id="QNY-Gt-oxy"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up Form" id="y68-Px-wDL"/>
+                    <connections>
+                        <outlet property="birthdateTextField" destination="XSM-wB-JNZ" id="l66-oQ-Ps1"/>
+                        <outlet property="emailTextField" destination="mE3-UK-g9o" id="HSz-wE-6gG"/>
+                        <outlet property="firstNameTextField" destination="Y0v-3A-60B" id="D7X-kC-A7Y"/>
+                        <outlet property="genderTextField" destination="FGD-Eu-J2h" id="AX2-Uh-6tu"/>
+                        <outlet property="lastNameTextField" destination="SUs-UP-p0A" id="WcX-Sx-gfz"/>
+                        <outlet property="passwordTextField" destination="Kf2-pe-E6W" id="LkD-6V-MoN"/>
+                        <outlet property="phoneNumberTextField" destination="to9-Xo-WiJ" id="lJx-pD-a6V"/>
+                        <outlet property="scrollViewBottom" destination="zLa-0U-QhN" id="Zkk-v2-vgo"/>
+                        <outlet property="submitButton" destination="gA7-j7-vRh" id="GgM-Bs-6m6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oo8-NU-BHg">
+                    <connections>
+                        <action selector="tapAction:" destination="BYZ-38-t0r" id="6yb-ix-quW"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MZo-eI-L86">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RlW-hK-eKy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="InN-p7-pub">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="j3K-9n-HOY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HK6-F0-NMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

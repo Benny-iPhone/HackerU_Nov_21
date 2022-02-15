@@ -1,0 +1,16 @@
+15.2.2022
+
+ImageView
+
+- retina images ✅
+- download image from server ✅
+- highlighted image ✅
+- pick image from camera/photo album ✅
+- snapshot and save to gallery ✅
+- screenshot notification ✅
+- camera preview (work on frames) Vision Framework
+- animation images (sprite sheet)
+
+Homework:
+
+1) make a checkbox check/uncheck using imageview image/highlighted image, toggle between them when image view is tapped (UITapGestureRecorgnizer)

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face" highlightedImage="h_face" translatesAutoresizingMaskIntoConstraints="NO" id="Dhc-ov-9ya">
+                                <rect key="frame" x="157" y="44" width="100" height="100"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kwh-Rs-me0">
+                                <rect key="frame" x="24" y="168" width="366" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ZPw-xH-00U"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-5A-jnL">
+                                <rect key="frame" x="141" y="388" width="132" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Download Image"/>
+                                <connections>
+                                    <action selector="downloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bkl-ZI-pwg"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mwW-M4-air">
+                                <rect key="frame" x="24" y="431" width="366" height="4"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kwh-Rs-me0" secondAttribute="trailing" constant="24" id="6Wn-aB-ZUz"/>
+                            <constraint firstItem="Dhc-ov-9ya" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="73o-jr-yIA"/>
+                            <constraint firstItem="j2k-5A-jnL" firstAttribute="centerX" secondItem="Kwh-Rs-me0" secondAttribute="centerX" id="77P-b0-Clc"/>
+                            <constraint firstItem="Kwh-Rs-me0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="CQd-g7-t7o"/>
+                            <constraint firstItem="mwW-M4-air" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Cd0-Zs-QLz"/>
+                            <constraint firstItem="Kwh-Rs-me0" firstAttribute="top" secondItem="Dhc-ov-9ya" secondAttribute="bottom" constant="24" id="Nl3-UK-XED"/>
+                            <constraint firstItem="Dhc-ov-9ya" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OnN-gk-szB"/>
+                            <constraint firstItem="mwW-M4-air" firstAttribute="top" secondItem="j2k-5A-jnL" secondAttribute="bottom" constant="12" id="Yj5-rv-eJD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mwW-M4-air" secondAttribute="trailing" constant="24" id="eei-Cx-Tne"/>
+                            <constraint firstItem="j2k-5A-jnL" firstAttribute="top" secondItem="Kwh-Rs-me0" secondAttribute="bottom" constant="20" id="iLB-Qe-KyZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Kwh-Rs-me0" id="zMO-km-b4i"/>
+                        <outlet property="progressView" destination="mwW-M4-air" id="E5t-Le-8Ir"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="face" width="100" height="100"/>
+        <image name="h_face" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
