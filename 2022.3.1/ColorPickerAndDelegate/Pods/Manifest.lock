@@ -1,0 +1,16 @@
+PODS:
+  - Colorful (3.0.0)
+
+DEPENDENCIES:
+  - Colorful (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - Colorful
+
+SPEC CHECKSUMS:
+  Colorful: 9e093edacaa9fb73512ad9da157f0707b82d2542
+
+PODFILE CHECKSUM: 3e4c00074e42a5458345c101e482b69d23737fff
+
+COCOAPODS: 1.11.2
