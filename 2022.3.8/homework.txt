@@ -1,0 +1,4 @@
+homework:
+
+in GenderAPI - display the gender in non-english language
+Guide: use enum for Gender, enum can be codable too.

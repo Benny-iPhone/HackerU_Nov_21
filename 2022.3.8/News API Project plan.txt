@@ -1,0 +1,47 @@
+News API Project
+
+UI:
+ArticlesViewController
+- tableview
+- tableArray (Article)
+
+ArticleSourceViewController
+- data (Source)
+
+SFSafariViewController - native - display article web page
+
+ArticleCell
+- source button
+- date label
+- title label
+- short description label
+- image view
+
+UI-Phase 2:
+pull to refresh ui (load more)
+UI-Phase 3:
+UISearchBar (free text for query or country code)
+
+Model:
+//https://newsapi.org/docs/endpoints/top-headlines
+Article Data Structure
+Source Data Structure
+
+Networking
+
+- use alamofire
+Endpoints {
+	top-headlines
+	top-headlines/sources
+	everything
+}
+
+- support paging
+
+DataManager
+- Source Caching
+
+== Error Handling in response
+
+*Unit Text
+

@@ -27,7 +27,7 @@ class LocationManager: NSObject {
         super.init()
         
         clLocationManager.desiredAccuracy = kCLLocationAccuracyBest
-        //clLocationManager.distanceFilter = 10 //meters
+        clLocationManager.distanceFilter = 20 //meters
         clLocationManager.delegate = self
     }
     
@@ -89,11 +89,11 @@ extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print(locations)
         //we got the location, we can stop updating now
-        manager.stopUpdatingLocation()
+        //manager.stopUpdatingLocation()
         
         //return result to callback
         self.callback?(.success(locations[0]))
-        self.callback = nil
+        //self.callback = nil
     }
     
     //💩 we failed to get user location

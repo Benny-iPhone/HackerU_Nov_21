@@ -1,0 +1,19 @@
+UI:
+- text field
+- button
+- label (result)
+
+Model:
+
+struct Answer
+ - gender
+ - accuracy
+
+ Networking class
+ - send gender request to server
+ Native(URLSession) / Alamofire
+
+ enum Gender {
+ 	case male(accuracy: Double)
+ 	case female(accuracy: Double)
+ }
