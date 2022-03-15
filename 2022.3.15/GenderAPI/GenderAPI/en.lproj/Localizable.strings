@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  GenderAPI
+
+  Created by Benny Davidovitz on 15/03/2022.
+  
+*/
+
+"Male" = "Male";
+"Female" = "Female";
+"Unknown" = "Unknown";

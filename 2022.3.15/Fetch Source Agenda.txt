@@ -1,0 +1,10 @@
+Fetch Source Agenda
+
+- Hook IBAction from button to cell ✅
+- Notify ArticlesViewController that source button pressed (ArticleCellDelegate) ✅
+- Create DetailedSource struct ✅
+- Compose a new function in Networking class ✅
+- ArticleSourceViewController
+
+- Cache 
+- Country Flag

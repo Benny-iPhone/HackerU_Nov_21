@@ -1,0 +1,5 @@
+# error handling
+# display error to user
+# pullToRefresh
+# everything api
+# expand
