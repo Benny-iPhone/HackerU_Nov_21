@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'NewsAPI' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NewsAPI
+  # for http networking
+  pod 'Alamofire', '~> 5.5'
+  # for loading images
+  pod 'SDWebImage', '~> 5.0'
+  
+  pod 'FlagKit'
+  pod 'PKHUD', '~> 5.0'
+  pod 'CCBottomRefreshControl'
+  pod 'EmptyDataSet-Swift', '~> 5.0.0'
+  
+end

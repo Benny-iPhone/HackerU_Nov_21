@@ -4,7 +4,20 @@ Fetch Source Agenda
 - Notify ArticlesViewController that source button pressed (ArticleCellDelegate) ✅
 - Create DetailedSource struct ✅
 - Compose a new function in Networking class ✅
-- ArticleSourceViewController
+- ArticleSourceViewController ✅
 
-- Cache 
-- Country Flag
+- Cache ✅
+- Country Flag ✅
+
+- App Icon ✅
+- Splash Screen ✅
+- Add Description in list ✅
+
+# error handling ✅
+# display error to user ✅
+# pullToRefresh ✅
+# paging ✅
+# everything api ✅
+# expand
+
+ReWrite ArticlesViewController/WebPageViewController with VM

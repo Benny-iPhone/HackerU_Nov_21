@@ -1,0 +1,16 @@
+Everything
+
+- a new method in Networking class ✅
+- Abstract ArticlesViewController, with 2 subclasses
+make 'getDataFromServer' modular ✅
+define override point on networking call
+- take care of segue ✅
+- take care cell ✅
+
+TopHeadlinesViewController ✅
+- fetch from relevant method in networking ✅
+EverythingViewController ✅
+- fetch from relevant method in networking ✅
+- searchbar to fill search text
+
+UITabBarController will be the app root ✅
