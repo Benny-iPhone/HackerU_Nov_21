@@ -1,0 +1,21 @@
+=== Plan === 
+
+One Time Password
+
+OTPViewController
+- phone number input
+- password input
+
++ country code selection
++ phone number validation
++ password reveal after phone number sent to server
+
+View Model
+
+	title
+	flow (phone/otp)
+	performAction() //send phone to server / confirm sms code
+
+SignInViewModel
+
+AdminOperationViewModel

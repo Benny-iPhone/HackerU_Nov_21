@@ -1,0 +1,6 @@
+framework module Pods_OMDBApi {
+  umbrella header "Pods-OMDBApi-umbrella.h"
+
+  export *
+  module * { export * }
+}
