@@ -1,0 +1,41 @@
+- local and remote notifications
+
+local
+- timing ✅
+- title ✅
+- body ✅
+- sound ✅
+- badge ✅
+- attachment (photo / video) ✅
+- action buttons ✅
+- quick reply ✅
+
+- deep link (handle action) ✅
+
+remote ✅
+a server addresses APNS (Apple Push Notification Server)
+with a request for push, with the next info
+- app id
+- device token (unique per device, per application, per installtion, may vary after iOS upgrade)
+- developer id
+- payload (notification content)
+pre requirements:
+- registed paid developer account
+- an iOS device
+do not forget to add capability to the project
+
+
+- upload to app store process ✅
+- side menu
+
+===
+
+- Threads
+- Actors
+- Memory Management
+
+===
+
+- SwiftUI
++ basics
++ App with Rest API
