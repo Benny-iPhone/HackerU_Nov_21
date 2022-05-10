@@ -1,0 +1,45 @@
+- Modern Swift I | Swift 5.5
+
++ async/await
+	* a method to get data from web
+	* a method to serialize the data
+	* display in UI
+
+
+- Memory Management
+
++ what is an allocation
++ how to release
++ understand autorelease
++ using @autoreleasepool
+ - answer: background thread and heavy operations
+
++ strong reference
++ weak reference
++ trick: array of weak references
+
++ retain cycle
++ debug memeory
++ Timer potential bug
+
+- Threads
+
++ what is process
++ what is thread
++ what is runloop
+
++ Concurrent Queue vs Serial Queue
++ Main Thread vs Background Thread
+
++ OperationQueue
++ GCD api (queue.sync, queue.async, queue.async barrier)
+
++ protect data race using Serial Queue
++ IStack interview question
+
++ dead lock
+
+- Modern Swift II
+
++ actors
++ Main Actor
